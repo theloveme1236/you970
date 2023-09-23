@@ -936,7 +936,7 @@ def instagram_follow():
     time.sleep(5)
     page_height = driver.execute_script("return document.body.scrollHeight;")
     driver.set_window_size(1920, page_height)
-    con_follows = random.randrange(1,5)
+    con_follows = 1
     con_follows_stop = 0
     for s in range(15):
         try:
@@ -979,7 +979,7 @@ def instagram_follow():
                     con_follows_stop +=1
                     print('follows_{}'.format(con_follows_stop))
                     #time.sleep(random.randrange(80, 200))
-                    time.sleep(random.randrange(50,200))
+                    #time.sleep(random.randrange(50,200))
                 except:
                     
                     try:
@@ -1028,7 +1028,7 @@ def instagram_like():
     time.sleep(5)
     page_height = driver.execute_script("return document.body.scrollHeight;")
     driver.set_window_size(1920, page_height)
-    for s in range(3):
+    for s in range(1):
         try:
             if stop_def_instagram_like == 'stop':
                 print('stop_def_instagram_like ')
